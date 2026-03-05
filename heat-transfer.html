@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>热转印机系列 - 汕头市恒发印刷机械有限公司</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            padding: 140px 0 80px;
+            color: white;
+            text-align: center;
+        }
+        .page-header h1 {
+            font-size: 42px;
+            margin-bottom: 16px;
+        }
+        .page-header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        .products-section {
+            padding: 80px 0;
+            background: var(--bg-light);
+        }
+        .category-section {
+            margin-bottom: 80px;
+        }
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 30px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid var(--secondary);
+        }
+        .category-header h2 {
+            font-size: 28px;
+            color: var(--primary);
+        }
+        .category-header span {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+        .product-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+        }
+        .product-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        .product-image-wrapper {
+            width: 100%;
+            height: 240px;
+            overflow: hidden;
+            cursor: pointer;
+            background: var(--bg-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .product-image-wrapper img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            transition: var(--transition);
+        }
+        .product-card:hover .product-image-wrapper img {
+            transform: scale(1.05);
+        }
+        .product-info {
+            padding: 24px;
+        }
+        .product-info h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+        .product-info .model {
+            color: var(--secondary);
+            font-weight: 500;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+        .product-info p {
+            color: var(--text-light);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .product-features {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 16px;
+        }
+        .product-features li {
+            background: var(--bg-light);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            color: var(--text-light);
+        }
+        .click-hint {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0,0,0,0.6);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            opacity: 0;
+            transition: var(--transition);
+        }
+        .product-card:hover .click-hint {
+            opacity: 1;
+        }
+        .product-image-wrapper {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">恒发</span>
+                <span class="brand-text">HENGFA</span>
+            </div>
+            <button class="nav-toggle" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="heat-transfer.html" class="active">热转印机</a></li>
+                <li><a href="hot-stamping.html">烫金机</a></li>
+                <li><a href="about.html">联系我们</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>热转印机系列</h1>
+            <p>Heat Transfer Machine Series | 点击查看大图</p>
+        </div>
+    </header>
+
+    <section class="products-section">
+        <div class="container">
+
+            <!-- 通用型 -->
+            <div class="category-section">
+                <div class="category-header">
+                    <h2>通用型热转印机</h2>
+                    <span>Universal Series</span>
+                </div>
+                <div class="product-gallery">
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="images/product_-003.jpg" alt="300热转印机系列" class="product-img">
+                            <span class="click-hint">点击查看大图</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>300热转印机系列</h3>
+                            <div class="model">平圆两用</div>
+                            <p>适用于平面、圆柱形产品，操作简便，性价比高。</p>
+                            <ul class="product-features">
+                                <li>平圆两用</li>
+                                <li>操作简便</li>
+                                <li>性价比高</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="images/product_-004.jpg" alt="300平圆两用-带治具旋转定位" class="product-img">
+                            <span class="click-hint">点击查看大图</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>300平圆两用</h3>
+                            <div class="model">带治具旋转定位</div>
+                            <p>精密定位产品，旋转定位，重复精度高。</p>
+                            <ul class="product-features">
+                                <li>旋转定位</li>
+                                <li>精密对位</li>
+                                <li>重复精度高</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="images/product_-005.jpg" alt="200仿形热转印机" class="product-img">
+                            <span class="click-hint">点击查看大图</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>200仿形热转印机</h3>
+                            <div class="model">仿形功能</div>
+                            <p>适用于异形、仿形产品，曲面适应，转印完整。</p>
+                            <ul class="product-features">
+                                <li>仿形功能</li>
+                                <li>曲面适应</li>
+                                <li>转印完整</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="images/product_-006.jpg" alt="200圆面热转印机" class="product-img">
+                            <span class="click-hint">点击查看大图</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>200圆面热转印机</h3>
+                            <div class="model">圆面专用</div>
+                            <p>圆形、圆柱产品专用，转印均匀，操作简单。</p>
+                            <ul class="product-features">
+                                <li>圆面专用</li>
+                                <li>转印均匀</li>
+                                <li>操作简单</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="images/product_-008.jpg" alt="800热转印机" class="product-img">
+                            <span class="click-hint">点击查看大图</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>800热转印机</h3>
+                            <div class="model">大型平面</div>
+                            <p>大型平面产品专用，大幅面，大压力，稳定耐用。</p>
+                            <ul class="product-features">
+                                <li>大幅面</li>
+                                <li>大压力</li>
+                                <li>稳定耐用</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="images/product_-010.jpg" alt="1000大平面热转印机" class="product-img">
+                            <span class="click-hint">点击查看大图</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>1000大平面热转印机</h3>
+                            <div class="model">超大幅面</div>
+                            <p>超大幅面产品，工业级，高效率。</p>
+                            <ul class="product-features">
+                                <li>超大平面</li>
+                                <li>工业级</li>
+                                <li>高效率</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 专用型 -->
+            <div class="category-section">
+                <div class="category-header">
+                    <h2>专用型热转印机</h2>
+                    <span>Specialized Series</span>
+                </div>
+                <div class="product-gallery">
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="images/product_-014.jpg" alt="锥度杯热转印机" class="product-img">
+                            <span class="click-hint">点击查看大图</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>锥度杯热转印机</h3>
+                            <div class="model">锥度产品专用</div>
+                            <p>锥度杯、喇叭口产品专用，锥度适应，无拉伸变形。</p>
+                            <ul class="product-features">
+                                <li>锥度适应</li>
+                                <li>转印完整</li>
+                                <li>无拉伸变形</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="images/product_-015.jpg" alt="涂料桶热转印机" class="product-img">
+                            <span class="click-hint">点击查看大图</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>涂料桶热转印机</h3>
+                            <div class="model">涂料桶专用</div>
+                            <p>涂料桶、化工桶专用，大桶专用，自动上料，高速生产。</p>
+                            <ul class="product-features">
+                                <li>大桶专用</li>
+                                <li>自动上料</li>
+                                <li>高速生产</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="images/product_-018.jpg" alt="双管热转印机" class="product-img">
+                            <span class="click-hint">点击查看大图</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>双管热转印机</h3>
+                            <div class="model">双管同时印刷</div>
+                            <p>双管、胶管产品专用，双管同时，效率翻倍。</p>
+                            <ul class="product-features">
+                                <li>双管同时</li>
+                                <li>效率翻倍</li>
+                                <li>同步对位</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 全自动型 -->
+            <div class="category-section">
+                <div class="category-header">
+                    <h2>全自动热转印机</h2>
+                    <span>Fully Automatic Series</span>
+                </div>
+                <div class="product-gallery">
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="images/product_-024.jpg" alt="全自动笔杆类热转印机" class="product-img">
+                            <span class="click-hint">点击查看大图</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>全自动笔杆类热转印机</h3>
+                            <div class="model">自动掉头转向</div>
+                            <p>笔杆、笔筒专用，自动掉头，自动转向，高速生产，无人值守。</p>
+                            <ul class="product-features">
+                                <li>自动掉头</li>
+                                <li>自动转向</li>
+                                <li>高速生产</li>
+                                <li>无人值守</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="images/product_-030.jpg" alt="全自动转盘圆柱热转印机" class="product-img">
+                            <span class="click-hint">点击查看大图</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>全自动转盘圆柱热转印机</h3>
+                            <div class="model">转盘式多工位</div>
+                            <p>圆柱形产品专用，转盘式多工位，连续生产，高效率。</p>
+                            <ul class="product-features">
+                                <li>转盘式多工位</li>
+                                <li>连续生产</li>
+                                <li>高效率</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="images/product_-036.jpg" alt="全自动转盘式六轴热转印机" class="product-img">
+                            <span class="click-hint">点击查看大图</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>全自动转盘式六轴热转印机</h3>
+                            <div class="model">六轴转盘</div>
+                            <p>多种圆柱产品专用，六轴同时，超高效率，工业级。</p>
+                            <ul class="product-features">
+                                <li>六轴同时</li>
+                                <li>超高效率</li>
+                                <li>工业级</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo">恒发</span>
+                    <p>汕头市恒发印刷机械有限公司</p>
+                    <p>邮箱: 1140551274@qq.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 汕头市恒发印刷机械有限公司. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

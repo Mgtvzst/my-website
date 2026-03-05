@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 汕头市恒发印刷机械有限公司</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            padding: 140px 0 80px;
+            color: white;
+            text-align: center;
+        }
+        .page-header h1 {
+            font-size: 42px;
+            margin-bottom: 16px;
+        }
+        .page-header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        .about-section {
+            padding: 80px 0;
+            background: var(--bg-light);
+        }
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow);
+        }
+        .about-content h2 {
+            font-size: 28px;
+            color: var(--primary);
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        .about-content p {
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        .contact-section {
+            padding: 80px 0;
+            background: white;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .contact-card {
+            background: var(--bg-light);
+            padding: 40px;
+            border-radius: var(--radius-lg);
+            text-align: center;
+            transition: var(--transition);
+        }
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+        .contact-icon {
+            width: 64px;
+            height: 64px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            margin: 0 auto 20px;
+        }
+        .contact-card h3 {
+            font-size: 20px;
+            color: var(--text);
+            margin-bottom: 12px;
+        }
+        .contact-card p {
+            color: var(--text-light);
+            font-size: 16px;
+        }
+        .contact-card a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+        .cta-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+            text-align: center;
+            color: white;
+        }
+        .cta-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .cta-section p {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+        .email-box {
+            display: inline-flex;
+            align-items: center;
+            gap: 16px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px 40px;
+            border-radius: var(--radius);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .email-box span {
+            font-size: 20px;
+        }
+        .email-box a {
+            color: var(--secondary-light);
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .email-box a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .about-content {
+                padding: 40px 30px;
+            }
+            .page-header h1 {
+                font-size: 28px;
+            }
+            .email-box {
+                flex-direction: column;
+                padding: 20px;
+            }
+            .email-box a {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">恒发</span>
+                <span class="brand-text">HENGFA</span>
+            </div>
+            <button class="nav-toggle" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="heat-transfer.html">热转印机</a></li>
+                <li><a href="hot-stamping.html">烫金机</a></li>
+                <li><a href="about.html" class="active">联系我们</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>联系我们</h1>
+            <p>Contact Us</p>
+        </div>
+    </header>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2>关于恒发</h2>
+                <p>汕头市恒发印刷机械有限公司是一家专业从事热转印机、烫金机研发、生产、销售的企业。公司拥有30多年的行业经验，产品涵盖热转印机系列、烫金机系列共45余款型号，广泛应用于塑料、金属、玻璃、木制品等材料的表面装饰印刷。</p>
+                <p>我们始终坚持以质量求生存、以创新求发展的经营理念，不断引进先进技术，优化产品结构，提升产品性能。公司产品不仅畅销国内市场，更远销欧美、东南亚、中东等全球各地，深受客户好评。</p>
+                <p>恒发机械可根据客户需求提供定制化服务，从产品设计、生产制造到售后技术支持，为客户提供一站式解决方案。我们期待与您的合作，共创美好未来！</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>联系方式</h2>
+                <p>Get in Touch</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3>电子邮箱</h3>
+                    <p><a href="mailto:1140551274@qq.com">1140551274@qq.com</a></p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>公司地址</h3>
+                    <p>广东省汕头市</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">🏭</div>
+                    <h3>主营业务</h3>
+                    <p>热转印机、烫金机<br>研发制造与销售</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>期待与您合作</h2>
+            <p>欢迎来电咨询或发送邮件，我们将竭诚为您服务</p>
+            <div class="email-box">
+                <span>📧</span>
+                <a href="mailto:1140551274@qq.com">1140551274@qq.com</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo">恒发</span>
+                    <p>汕头市恒发印刷机械有限公司</p>
+                    <p>Shantou Hengfa Printing Machinery Co., Ltd.</p>
+                    <p style="margin-top: 20px;">邮箱: <a href="mailto:1140551274@qq.com" style="color: var(--secondary-light);">1140551274@qq.com</a></p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="heat-transfer.html">热转印机</a></li>
+                        <li><a href="hot-stamping.html">烫金机</a></li>
+                        <li><a href="about.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>产品分类</h4>
+                    <p>热转印机系列</p>
+                    <p>烫金机系列</p>
+                    <p>全自动设备</p>
+                    <p>定制设备</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 汕头市恒发印刷机械有限公司. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>烫金机系列 - 汕头市恒发印刷机械有限公司</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            padding: 140px 0 80px;
+            color: white;
+            text-align: center;
+        }
+        .page-header h1 {
+            font-size: 42px;
+            margin-bottom: 16px;
+        }
+        .page-header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        .products-list {
+            padding: 80px 0;
+            background: var(--bg-light);
+        }
+        .category-section {
+            margin-bottom: 60px;
+        }
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 30px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid var(--secondary);
+        }
+        .category-header h2 {
+            font-size: 28px;
+            color: var(--primary);
+        }
+        .category-header span {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+        .products-table-wrapper {
+            background: white;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        .products-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .products-table th {
+            background: var(--primary);
+            color: white;
+            padding: 16px;
+            text-align: left;
+            font-weight: 600;
+        }
+        .products-table td {
+            padding: 16px;
+            border-bottom: 1px solid var(--border);
+        }
+        .products-table tr:hover {
+            background: var(--bg-light);
+        }
+        .products-table tr:last-child td {
+            border-bottom: none;
+        }
+        .model-name {
+            font-weight: 600;
+            color: var(--primary);
+        }
+        .features-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .features-list li {
+            background: var(--bg-light);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            color: var(--text-light);
+        }
+        @media (max-width: 768px) {
+            .products-table {
+                display: block;
+                overflow-x: auto;
+            }
+            .page-header h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">恒发</span>
+                <span class="brand-text">HENGFA</span>
+            </div>
+            <button class="nav-toggle" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="heat-transfer.html">热转印机</a></li>
+                <li><a href="hot-stamping.html" class="active">烫金机</a></li>
+                <li><a href="about.html">联系我们</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>烫金机系列</h1>
+            <p>Hot Foil Stamping Machine Series</p>
+        </div>
+    </header>
+
+    <section class="products-list">
+        <div class="container">
+
+            <!-- 平面烫金机 -->
+            <div class="category-section">
+                <div class="category-header">
+                    <h2>平面烫金机</h2>
+                    <span>Flat Hot Stamping</span>
+                </div>
+                <div class="products-table-wrapper">
+                    <table class="products-table">
+                        <thead>
+                            <tr>
+                                <th>型号</th>
+                                <th>适用产品</th>
+                                <th>特点</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="model-name">300平面烫金机</span></td>
+                                <td>平面产品</td>
+                                <td>
+                                    <ul class="features-list">
+                                        <li>基础款</li>
+                                        <li>经济实用</li>
+                                        <li>操作简便</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span class="model-name">伺服双轴平面烫金机</span></td>
+                                <td>精密平面产品</td>
+                                <td>
+                                    <ul class="features-list">
+                                        <li>伺服控制</li>
+                                        <li>高精度</li>
+                                        <li>稳定性好</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span class="model-name">旋转式分格钟表盘圆环盘平面烫金机</span></td>
+                                <td>钟表盘、圆环盘</td>
+                                <td>
+                                    <ul class="features-list">
+                                        <li>精密定位</li>
+                                        <li>旋转分格</li>
+                                        <li>适合钟表行业</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span class="model-name">全自动双工位双色转盘平面烫金机</span></td>
+                                <td>双色平面产品</td>
+                                <td>
+                                    <ul class="features-list">
+                                        <li>双工位</li>
+                                        <li>双色烫印</li>
+                                        <li>高效率</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 仿形/曲面烫金机 -->
+            <div class="category-section">
+                <div class="category-header">
+                    <h2>仿形/曲面烫金机</h2>
+                    <span>Profiling/Curved Surface</span>
+                </div>
+                <div class="products-table-wrapper">
+                    <table class="products-table">
+                        <thead>
+                            <tr>
+                                <th>型号</th>
+                                <th>适用产品</th>
+                                <th>特点</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="model-name">伺服双轴锥度热转印机</span></td>
+                                <td>锥度产品</td>
+                                <td>
+                                    <ul class="features-list">
+                                        <li>锥度烫金</li>
+                                        <li>伺服双轴</li>
+                                        <li>精密控制</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span class="model-name">伺服双轴圆面文字LOGO烫金机</span></td>
+                                <td>圆面LOGO</td>
+                                <td>
+                                    <ul class="features-list">
+                                        <li>圆面专用</li>
+                                        <li>文字清晰</li>
+                                        <li>LOGO精美</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span class="model-name">双轴卧式仿型烫金机</span></td>
+                                <td>仿形产品</td>
+                                <td>
+                                    <ul class="features-list">
+                                        <li>卧式结构</li>
+                                        <li>双轴仿形</li>
+                                        <li>适应复杂曲面</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span class="model-name">卧式仿形烫金机</span></td>
+                                <td>卧式仿形产品</td>
+                                <td>
+                                    <ul class="features-list">
+                                        <li>仿形功能</li>
+                                        <li>卧式设计</li>
+                                        <li>操作便捷</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span class="model-name">冰箱抽屉仿型包R角烫金机</span></td>
+                                <td>冰箱抽屉、R角产品</td>
+                                <td>
+                                    <ul class="features-list">
+                                        <li>R角处理</li>
+                                        <li>仿型包边</li>
+                                        <li>适合家电产品</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span class="model-name">学习仿型机</span></td>
+                                <td>教学、研发</td>
+                                <td>
+                                    <ul class="features-list">
+                                        <li>教学演示</li>
+                                        <li>研发试验</li>
+                                        <li>操作简单</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 大型/特种烫金机 -->
+            <div class="category-section">
+                <div class="category-header">
+                    <h2>大型/特种烫金机</h2>
+                    <span>Large/Special Type</span>
+                </div>
+                <div class="products-table-wrapper">
+                    <table class="products-table">
+                        <thead>
+                            <tr>
+                                <th>型号</th>
+                                <th>适用产品</th>
+                                <th>特点</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="model-name">40T子母缸液压烫金机</span></td>
+                                <td>大型产品、厚材料</td>
+                                <td>
+                                    <ul class="features-list">
+                                        <li>40吨压力</li>
+                                        <li>液压驱动</li>
+                                        <li>大压力烫印</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span class="model-name">2000边框烫金机</span></td>
+                                <td>边框、相框</td>
+                                <td>
+                                    <ul class="features-list">
+                                        <li>边框专用</li>
+                                        <li>2000mm幅面</li>
+                                        <li>大幅面烫印</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span class="model-name">四柱伺服烫金机</span></td>
+                                <td>大型精密产品</td>
+                                <td>
+                                    <ul class="features-list">
+                                        <li>四柱结构</li>
+                                        <li>伺服控制</li>
+                                        <li>高精度</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span class="model-name">液压垃圾桶烫金机</span></td>
+                                <td>垃圾桶、大型容器</td>
+                                <td>
+                                    <ul class="features-list">
+                                        <li>垃圾桶专用</li>
+                                        <li>液压大压力</li>
+                                        <li>工业级</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span class="model-name">全自动香槟杯烫金机</span></td>
+                                <td>玻璃杯、香槟杯</td>
+                                <td>
+                                    <ul class="features-list">
+                                        <li>玻璃杯专用</li>
+                                        <li>全自动</li>
+                                        <li>精美烫印</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo">恒发</span>
+                    <p>汕头市恒发印刷机械有限公司</p>
+                    <p>邮箱: 1140551274@qq.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 汕头市恒发印刷机械有限公司. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
